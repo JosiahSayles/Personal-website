@@ -38,6 +38,11 @@ body {
     box-shadow: 4px 5px 50px 5px;
     min-height: 25vh;
   }
+  div {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/7;
+  }
 
   footer {
     grid-column: 1/8;
@@ -90,6 +95,10 @@ main {
   justify-content: center;
 }
 
+div {
+  background-color: maroon;
+}
+
 section {
   background-color: #99745c;
 }
@@ -101,7 +110,7 @@ h2 {
 
 .siah-ville-studio {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -114,27 +123,23 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20vw;
+  width: 40vw;
 }
 
 .hobbies {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
+  height: 10px;
   padding: 0;
   margin: 0;
 }
-
 .hobbies-images img {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 15vw;
-  margin: 15px;
+  width: 200px;
 }
 
 footer {
@@ -162,7 +167,7 @@ li a:hover {
   text-decoration: underline salmon;
 }
 
-@media (width > 1000px) {
+@media (width >= 1000px) {
   .nav-menu {
     font-size: 1.5rem;
   }
@@ -189,5 +194,52 @@ li a:hover {
     align-items: center;
     font-size: 1.8rem;
     margin: 10px;
+  }
+
+  .siah-ville-studio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .siah-ville-images img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+  }
+
+  .hobbies {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hobbies-images img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 12vw;
+    margin: 15px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: burlywood;
+    font-size: 1.5rem;
   }
 }
