@@ -143,6 +143,7 @@ li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 1ch;
     background-color: lightgray;
     margin-bottom: 20px;
@@ -154,6 +155,7 @@ li a:hover {
   .project2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: lightgray;
     margin-bottom: 20px;
     padding: 1ch;
