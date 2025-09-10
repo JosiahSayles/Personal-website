@@ -69,7 +69,8 @@ img {
 
 h2 {
   text-decoration: underline salmon;
-  margin-bottom: 2ch;
+  margin-bottom: 1ch;
+  font-size: 10vw;
 }
 h3 {
   color: salmon;
@@ -189,6 +190,10 @@ li a:hover {
     padding: 10px;
     color: salmon;
     text-decoration: underline black;
+  }
+
+  h2 {
+    font-size: 5vw;
   }
 
   section {
